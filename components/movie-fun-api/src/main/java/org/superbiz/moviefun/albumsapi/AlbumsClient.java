@@ -7,6 +7,7 @@ import java.util.List;
 
 import static org.springframework.http.HttpMethod.GET;
 
+
 public class AlbumsClient {
 
     private String albumsUrl;
@@ -16,6 +17,7 @@ public class AlbumsClient {
         this.albumsUrl = albumsUrl;
         this.restOperations = restOperations;
     }
+
 
     public void addAlbum(AlbumInfo album) {
         restOperations.postForEntity(albumsUrl, album, AlbumInfo.class);
