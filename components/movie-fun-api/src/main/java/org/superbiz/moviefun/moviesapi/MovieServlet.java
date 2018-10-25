@@ -32,8 +32,8 @@ public class MovieServlet extends HttpServlet {
 
     private static final long serialVersionUID = -5832176047021911038L;
 
-    @Value("${movies.pagesize}")
-    public int pageSize;
+    //@Value("${movies.pagesize}")
+    public int pageSize=4;
 
     private MoviesClient moviesClient;
 
